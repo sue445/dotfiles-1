@@ -35,6 +35,15 @@ set fileformats=unix,dos
 highlight WideSpace ctermbg=blue guibg=blue
 highlight EOLSpace ctermbg=red guibg=red
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set nocompatible
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
+
 
 
 " Disable AutoComplPop.
