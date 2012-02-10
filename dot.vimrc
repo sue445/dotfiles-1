@@ -1,18 +1,30 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.vim/bundle/vundle/ 
 call vundle#rc()
 
+Bundle 'xoria256.vim'
+Bundle 'jpo/vim-railscasts-theme'
 
+Bundle 'vim-ruby/vim-ruby'
 
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/vimfiler'
+Bundle 'Shougo/unite.vim'
+
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-rails'
 
 set ambiwidth=double
 set autoread
 set hidden
 set number
 set showmatch
-set ttymouse=xterm2
-set wildmode=list:longest,list:full
+
+set directory-=.
+
+"backup
+set nobackup
 
 "encoding
 set enc=utf-8
