@@ -15,6 +15,9 @@ Bundle 'Shougo/unite.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
 
+Bundle 'vim-coffee-script'
+Bundle 'coffee.vim'
+
 set ambiwidth=double
 set autoread
 set hidden
