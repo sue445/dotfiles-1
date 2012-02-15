@@ -18,6 +18,11 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-coffee-script'
 Bundle 'coffee.vim'
 
+Bundle 'surround.vim'
+
+Bundle 'textobj-user'
+Bundle 'textobj-indent'
+
 filetype indent plugin on
 
 set ambiwidth=double
@@ -47,6 +52,8 @@ set nocompatible
 syntax on
 filetype on
 
+set incsearch
+set hlsearch
 
 " unite.vim
 let g:unite_enable_start_insert = 1
