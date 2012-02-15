@@ -18,6 +18,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-coffee-script'
 Bundle 'coffee.vim'
 
+filetype indent plugin on
+
 set ambiwidth=double
 set autoread
 set hidden
@@ -44,8 +46,6 @@ set expandtab
 set nocompatible
 syntax on
 filetype on
-filetype indent on
-filetype plugin on
 
 
 " unite.vim
@@ -72,6 +72,10 @@ function! s:unite_my_settings()
   nmap <silent><buffer> <ESC><ESC> q
   imap <silent><buffer> <ESC><ESC> <ESC>q
 endfunction
+
+
+" template
+autocmd BufNewFile *.rb 0r ~/.vim/templates/rb.tpl
 
 
 
