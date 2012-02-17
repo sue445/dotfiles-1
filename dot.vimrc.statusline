@@ -1,0 +1,4 @@
+set laststatus=2
+
+set ruler
+"let g:Powerline_symbols = 'fancy'
