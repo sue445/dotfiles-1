@@ -1,0 +1,31 @@
+
+_Z_CMD=j
+source ~/.zsh/z/z.sh
+precmd() {
+    _z --add "$(pwd -P)"
+}
+
+export LANG=ja_JP.UTF-8
+HISTFILE=$HOME/.zsh-history           # 履歴をファイルに保存する
+HISTSIZE=1000                         # メモリ内の履歴の数
+SAVEHIST=1000                         # 保存される履歴の数
+setopt extended_history               # 履歴ファイルに時刻を記録
+
+# rvm
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+#libxml2
+LDFLAGS="$LDFLAGS /usr/local/Cellar/libxml2/2.7.7/lib"
+CPPFLAGS="$CPPFLAGS /usr/local/Cellar/libxml2/2.7.7/include"
+
+bindkey -e
+
+export SVN_EDITOR=vim
+export EDITOR=vim
+
+alias svn=colorsvn
+alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vi=vim
+
+source ~/.zsh/ssh_alias

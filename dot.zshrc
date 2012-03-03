@@ -29,3 +29,4 @@ plugins=(git rails3 git bundler rvm svn thor)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+source ~/.zsh/zshrc
