@@ -56,6 +56,8 @@ set nocompatible
 syntax on
 filetype on
 
+set clipboard=unnamed
+
 
 autocmd BufWritePre * :%s/\s\+$//ge
 autocmd BufWritePre * :%s/\t/ /ge
