@@ -53,6 +53,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set nocompatible
+set backspace=2
 syntax on
 filetype on
 
@@ -72,6 +73,10 @@ nnoremap <silent> vsc :VimShellCreate<CR>
 nnoremap <silent> vp :VimShellPop<CR>
 
 " let g:vimshell_editor_command = '~/Applications/MacVim.app/Contents/MacOS/Vim'
+
+
+" set t_kD=
+" set t_kb=
 
 source ~/dotfiles/dot.vimrc.statusline
 source ~/dotfiles/dot.vimrc.completion
