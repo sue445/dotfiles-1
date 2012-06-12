@@ -16,6 +16,7 @@ Bundle 'Shougo/vimshell'
 
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-fugitive'
 
 Bundle 'vim-coffee-script'
 Bundle 'coffee.vim'
@@ -34,6 +35,9 @@ set autoread
 set hidden
 set number
 set showmatch
+
+" コピーのインデント防止
+set paste
 
 set directory-=.
 
