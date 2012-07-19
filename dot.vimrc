@@ -36,8 +36,8 @@ set hidden
 set number
 set showmatch
 
-" コピーのインデント防止
-set paste
+" コピーのインデント防止あとでtoggleできるようにする
+" set paste
 
 set directory-=.
 
@@ -62,6 +62,12 @@ syntax on
 filetype on
 
 set clipboard=unnamed
+
+" popup menu color
+hi Pmenu ctermbg=lightcyan ctermfg=black
+hi PmenuSel ctermbg=blue ctermfg=black
+hi PmenuSbar ctermbg=darkgray
+hi PmenuThumb ctermbg=lightgray
 
 
 autocmd BufWritePre * :%s/\s\+$//ge
