@@ -7,7 +7,8 @@ set hlsearch
 "検索時に最後まで最後まで行ったら最初に戻る
 set wrapscan
 
-nmap <ESC><ESC> ;nohlsearch<CR><ESC>
+noremap <ESC><ESC> :nohlsearch<CR><ESC>
+
 
 " 検索などで飛んだらそこを真ん中に
 nmap n nzz
