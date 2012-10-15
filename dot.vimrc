@@ -78,8 +78,8 @@ autocmd BufNewFile *.rb 0r ~/.vim/templates/rb.tpl
 
 
 " vimshell map
-nnoremap <silent> vs :VimShell<CR>
-nnoremap <silent> vsc :VimShellCreate<CR>
+" nnoremap <silent> vs :VimShell<CR>
+" nnoremap <silent> vsc :VimShellCreate<CR>
 nnoremap <silent> vp :VimShellPop<CR>
 
 " let g:vimshell_editor_command = '~/Applications/MacVim.app/Contents/MacOS/Vim'
