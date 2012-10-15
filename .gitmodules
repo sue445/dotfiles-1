@@ -7,3 +7,6 @@
 [submodule "dot.oh-my-zsh"]
 	path = dot.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "dot.zsh/auto-fu.zsh"]
+	path = dot.zsh/auto-fu.zsh
+	url = https://github.com/hchbaw/auto-fu.zsh.git

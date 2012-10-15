@@ -29,3 +29,4 @@ alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 
 source ~/.zsh/ssh_alias
+source ~/.zsh/auto-fu.zsh/auto-fu.zsh
