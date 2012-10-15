@@ -4,6 +4,7 @@ source ~/.zsh/z/z.sh
 precmd() {
     _z --add "$(pwd -P)"
 }
+alias z=j
 
 export LANG=ja_JP.UTF-8
 HISTFILE=$HOME/.zsh-history           # 履歴をファイルに保存する
@@ -27,6 +28,8 @@ export GIT_EDITOR=$EDITOR
 alias svn=colorsvn
 alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+alias tac='tail -r'
 
 source ~/.zsh/ssh_alias
 source ~/.zsh/auto-fu.zsh/auto-fu.zsh
