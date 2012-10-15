@@ -34,4 +34,4 @@ alias tac='tail -r'
 source ~/.zsh/ssh_alias
 source ~/.zsh/auto-fu.zsh/auto-fu.zsh
 source ~/.zsh/zaw/zaw.zsh
-source ~/.zsh/z-zaw.zsh
+source ~/.zsh/zaw_custom.zsh
