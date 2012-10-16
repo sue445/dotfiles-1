@@ -29,4 +29,4 @@ source ~/.zsh/ssh_alias
 source ~/.zsh/pbcopy_buffer.zsh
 source ~/.zsh/zaw/zaw.zsh
 source ~/.zsh/zaw_custom.zsh
-source ~/.zsh/auto-fu_init.zsh
+#source ~/.zsh/auto-fu_init.zsh
