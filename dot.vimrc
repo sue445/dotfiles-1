@@ -4,9 +4,9 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 
 Bundle 'xoria256.vim'
-Bundle 'jpo/vim-railscasts-theme'
 
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'jaromero/vim-monokai-refined'
 
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/vimfiler'
@@ -17,6 +17,7 @@ Bundle 'Shougo/vimshell'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
 
 Bundle 'vim-coffee-script'
 Bundle 'coffee.vim'
@@ -27,6 +28,7 @@ Bundle 'textobj-user'
 Bundle 'textobj-indent'
 
 Bundle 'Lokaltog/vim-powerline'
+
 
 filetype indent plugin on
 
@@ -58,7 +60,6 @@ set shiftwidth=2
 set expandtab
 set nocompatible
 set backspace=2
-syntax on
 filetype on
 
 set clipboard=unnamed
@@ -88,6 +89,7 @@ nnoremap <silent> vp :VimShellPop<CR>
 " set t_kD=
 " set t_kb=
 
+source ~/dotfiles/dot.vimrc.color
 source ~/dotfiles/dot.vimrc.statusline
 source ~/dotfiles/dot.vimrc.completion
 source ~/dotfiles/dot.vimrc.search

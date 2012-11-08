@@ -1,0 +1,4 @@
+syntax on
+
+" iTerm2をこちらのカラーテーマにする git://github.com/larssmit/iterm2-getafe.git
+colorscheme Monokai-Refined
