@@ -13,3 +13,9 @@
 [submodule "dot.zsh/zaw"]
 	path = dot.zsh/zaw
 	url = git://github.com/zsh-users/zaw.git
+[submodule "dot.tmux/tmux-powerline"]
+	path = dot.tmux/tmux-powerline
+	url = https://github.com/erikw/tmux-powerline.git
+[submodule "dot.tmux/tmux-MacOSX-pasteboard"]
+	path = dot.tmux/tmux-MacOSX-pasteboard
+	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
