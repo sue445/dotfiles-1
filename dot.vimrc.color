@@ -2,3 +2,10 @@ syntax on
 
 " iTerm2をこちらのカラーテーマにする git://github.com/larssmit/iterm2-getafe.git
 colorscheme Monokai-Refined
+
+" popup menu color
+hi Pmenu ctermbg=lightcyan ctermfg=black
+hi PmenuSel ctermbg=blue ctermfg=black
+hi PmenuSbar ctermbg=darkgray
+hi PmenuThumb ctermbg=lightgray
+

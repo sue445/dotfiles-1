@@ -64,12 +64,6 @@ filetype on
 
 set clipboard=unnamed
 
-" popup menu color
-hi Pmenu ctermbg=lightcyan ctermfg=black
-hi PmenuSel ctermbg=blue ctermfg=black
-hi PmenuSbar ctermbg=darkgray
-hi PmenuThumb ctermbg=lightgray
-
 
 autocmd BufWritePre * :%s/\s\+$//ge
 autocmd BufWritePre * :%s/\t/ /ge
@@ -94,4 +88,6 @@ source ~/dotfiles/dot.vimrc.statusline
 source ~/dotfiles/dot.vimrc.completion
 source ~/dotfiles/dot.vimrc.search
 source ~/dotfiles/dot.vimrc.unite
+
+autocmd QuickFixCmdPost *grep* cwindow
 
