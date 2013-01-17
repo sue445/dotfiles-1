@@ -17,3 +17,6 @@ vim .vimrc
 
 cd dotfiles/bundle/vimproc
 make -f make_mac.mak
+
+cd dotfiles/dot.tmux/tmux-MacOSX-pasteboard
+make reattach-to-user-namespace
