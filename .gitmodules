@@ -19,3 +19,9 @@
 [submodule "dot.tmux/tmux-MacOSX-pasteboard"]
 	path = dot.tmux/tmux-MacOSX-pasteboard
 	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
+[submodule "/Users/takumi/dotfiles/dot.vim/bundle/neobundle.vim"]
+	path = /Users/takumi/dotfiles/dot.vim/bundle/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim
+[submodule "/Users/takumi/dotfiles/dot.vim/bundle/vimproc"]
+	path = /Users/takumi/dotfiles/dot.vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc

@@ -1,35 +1,47 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/vundle/
-call vundle#rc()
 
-Bundle 'xoria256.vim'
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
 
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'jaromero/vim-monokai-refined'
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/vimfiler'
 
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/vimfiler'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimproc'
-Bundle 'Shougo/vimshell'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'tpope/vim-rails'
 
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
+NeoBundle 'vim-ruby/vim-ruby'
 
-Bundle 'vim-coffee-script'
-Bundle 'coffee.vim'
+NeoBundle 'jaromero/vim-monokai-refined'
 
-Bundle 'surround.vim'
+NeoBundle 'Lokaltog/vim-powerline'
 
-Bundle 'textobj-user'
-Bundle 'textobj-indent'
-
-Bundle 'Lokaltog/vim-powerline'
+" NeoBundle 'Shougo/neosnippet'
+" NeoBundle 'jpalardy/vim-slime'
 
 
+"
+"Bundle 'xoria256.vim'
+"
+"
+"Bundle 'vim-coffee-script'
+"Bundle 'coffee.vim'
+"
+"Bundle 'surround.vim'
+"
+"Bundle 'textobj-user'
+"Bundle 'textobj-indent'
+"
+"
+"
 filetype indent plugin on
 
 set ambiwidth=double
@@ -88,6 +100,7 @@ source ~/dotfiles/dot.vimrc.statusline
 source ~/dotfiles/dot.vimrc.completion
 source ~/dotfiles/dot.vimrc.search
 source ~/dotfiles/dot.vimrc.unite
+source ~/dotfiles/dot.vimrc.vimfiler
 
 autocmd QuickFixCmdPost *grep* cwindow
 
