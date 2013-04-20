@@ -100,6 +100,7 @@ source ~/dotfiles/dot.vimrc.statusline
 source ~/dotfiles/dot.vimrc.completion
 source ~/dotfiles/dot.vimrc.search
 source ~/dotfiles/dot.vimrc.unite
+source ~/dotfiles/dot.vimrc.vimfiler
 
 autocmd QuickFixCmdPost *grep* cwindow
 
