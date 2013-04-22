@@ -1,27 +1,27 @@
 [submodule "dot.vim/vundle"]
-	path = dot.vim/vundle
-	url = git://github.com/gmarik/vundle.git
+ path = dot.vim/vundle
+ url = git://github.com/gmarik/vundle.git
 [submodule "dot.zsh/z"]
-	path = dot.zsh/z
-	url = https://github.com/rupa/z.git
+ path = dot.zsh/z
+ url = https://github.com/rupa/z.git
 [submodule "dot.oh-my-zsh"]
-	path = dot.oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
+ path = dot.oh-my-zsh
+ url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "dot.zsh/auto-fu.zsh"]
-	path = dot.zsh/auto-fu.zsh
-	url = https://github.com/hchbaw/auto-fu.zsh.git
+ path = dot.zsh/auto-fu.zsh
+ url = https://github.com/hchbaw/auto-fu.zsh.git
 [submodule "dot.zsh/zaw"]
-	path = dot.zsh/zaw
-	url = git://github.com/zsh-users/zaw.git
+ path = dot.zsh/zaw
+ url = git://github.com/zsh-users/zaw.git
 [submodule "dot.tmux/tmux-powerline"]
-	path = dot.tmux/tmux-powerline
-	url = https://github.com/erikw/tmux-powerline.git
+ path = dot.tmux/tmux-powerline
+ url = https://github.com/erikw/tmux-powerline.git
 [submodule "dot.tmux/tmux-MacOSX-pasteboard"]
-	path = dot.tmux/tmux-MacOSX-pasteboard
-	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
-[submodule "/Users/takumi/dotfiles/dot.vim/bundle/neobundle.vim"]
-	path = /Users/takumi/dotfiles/dot.vim/bundle/neobundle.vim
-	url = https://github.com/Shougo/neobundle.vim
-[submodule "/Users/takumi/dotfiles/dot.vim/bundle/vimproc"]
-	path = /Users/takumi/dotfiles/dot.vim/bundle/vimproc
-	url = https://github.com/Shougo/vimproc
+ path = dot.tmux/tmux-MacOSX-pasteboard
+ url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
+[submodule "dot.vim/bundle/neobundle.vim"]
+ path = dot.vim/bundle/neobundle.vim
+ url = https://github.com/Shougo/neobundle.vim
+[submodule "dot.vim/bundle/vimproc"]
+ path = dot.vim/bundle/vimproc
+ url = https://github.com/Shougo/vimproc
