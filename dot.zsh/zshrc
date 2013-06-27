@@ -16,17 +16,18 @@ CPPFLAGS="$CPPFLAGS /usr/local/Cellar/libxml2/2.7.7/include"
 
 bindkey -e
 
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
-export SVN_EDITOR=$EDITOR
-export GIT_EDITOR=$EDITOR
 
 alias svn=colorsvn
 alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vm=vim
 
 alias tac='tail -r'
+setopt nonomatch
 
-source ~/.zsh/ssh_alias
+export EDITOR=vim
+export SVN_EDITOR=$EDITOR
+export GIT_EDITOR=$EDITOR
+
 source ~/.zsh/pbcopy_buffer.zsh
 source ~/.zsh/zaw/zaw.zsh
 source ~/.zsh/zaw_custom.zsh
