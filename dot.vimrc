@@ -80,10 +80,6 @@ set clipboard=unnamed
 autocmd BufWritePre * :%s/\s\+$//ge
 autocmd BufWritePre * :%s/\t/ /ge
 
-" template
-autocmd BufNewFile *.rb 0r ~/.vim/templates/rb.tpl
-
-
 " vimshell map
 " nnoremap <silent> vs :VimShell<CR>
 " nnoremap <silent> vsc :VimShellCreate<CR>
