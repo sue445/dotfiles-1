@@ -24,12 +24,9 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 rails4 bundler rvm svn thor zeus)
+plugins=(git rails4 bundler rbenv thor)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source ~/.zsh/zshrc
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/bin
