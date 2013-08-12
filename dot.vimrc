@@ -19,6 +19,10 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'tpope/vim-rails'
 
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'slim-template/vim-slim'
+
+NeoBundle 'elzr/vim-json'
+NeoBundle 'kchmck/vim-coffee-script'
 
 NeoBundle 'jaromero/vim-monokai-refined'
 
