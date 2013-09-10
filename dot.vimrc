@@ -26,7 +26,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 
 NeoBundle 'jaromero/vim-monokai-refined'
 
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'bling/vim-airline'
 
 " NeoBundle 'Shougo/neosnippet'
 " NeoBundle 'jpalardy/vim-slime'
