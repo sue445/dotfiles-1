@@ -30,3 +30,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source ~/.zsh/zshrc
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
