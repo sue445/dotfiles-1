@@ -40,21 +40,6 @@ NeoBundle 'kmnk/vim-unite-giti'
 " NeoBundle 'Shougo/neosnippet'
 " NeoBundle 'jpalardy/vim-slime'
 
-
-"
-"Bundle 'xoria256.vim'
-"
-"
-"Bundle 'vim-coffee-script'
-"Bundle 'coffee.vim'
-"
-"Bundle 'surround.vim'
-"
-"Bundle 'textobj-user'
-"Bundle 'textobj-indent'
-"
-"
-"
 filetype indent plugin on
 
 set ambiwidth=double
@@ -111,6 +96,7 @@ source ~/dotfiles/dot.vimrc.completion
 source ~/dotfiles/dot.vimrc.search
 source ~/dotfiles/dot.vimrc.unite
 source ~/dotfiles/dot.vimrc.vimfiler
+source ~/dotfiles/dot.vimrc.git
 
 autocmd QuickFixCmdPost *grep* cwindow
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
@@ -137,7 +123,3 @@ autocmd BufNewFile,BufRead *.cap set filetype=ruby
 autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
 autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
 
-" unite-giti
-nnoremap <silent>gl :<C-U>Unite -no-start-insert -horizontal giti/log<CR>
-nnoremap <silent>gs :<C-U>Unite -no-start-insert -horizontal giti/status<CR>
-nnoremap <silent>gh :<C-U>Unite -no-start-insert giti/branch_all<CR>
