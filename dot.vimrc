@@ -28,6 +28,15 @@ NeoBundle 'jaromero/vim-monokai-refined'
 
 NeoBundle 'bling/vim-airline'
 
+NeoBundle "othree/javascript-libraries-syntax.vim"
+NeoBundle 'othree/html5.vim'
+
+NeoBundle 'hail2u/vim-css3-syntax'
+
+NeoBundle 'gregsexton/gitv.git'
+NeoBundle 'kmnk/vim-unite-giti'
+
+
 " NeoBundle 'Shougo/neosnippet'
 " NeoBundle 'jpalardy/vim-slime'
 
@@ -76,6 +85,7 @@ set shiftwidth=2
 set expandtab
 set nocompatible
 set backspace=2
+set ambiwidth=double
 filetype on
 
 set clipboard=unnamed
@@ -103,4 +113,31 @@ source ~/dotfiles/dot.vimrc.unite
 source ~/dotfiles/dot.vimrc.vimfiler
 
 autocmd QuickFixCmdPost *grep* cwindow
+autocmd BufNewFile,BufRead *.cap set filetype=ruby
 
+
+" function Hoge() range
+"   " 行頭のスペース削除
+"   :%s/^\s*//g
+"   " //以降を削除
+"   :%s;//.*;;g
+"   " 行末のスペース削除
+"   :%s/\s\+$//ge
+"   :%s/\t/ /ge
+"   " {}の中身を削除
+"   :call search("{")
+"   :normal diB
+"   " 行の結合
+"   :normal ggVGJ
+"   :%s/, /,/g
+" endfunction
+"
+" command! Cpparse call Hoge()
+
+autocmd BufReadPre *.js let b:javascript_lib_use_jquery = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_angularjs = 1
+
+" unite-giti
+nnoremap <silent>gl :<C-U>Unite -no-start-insert -horizontal giti/log<CR>
+nnoremap <silent>gs :<C-U>Unite -no-start-insert -horizontal giti/status<CR>
+nnoremap <silent>gh :<C-U>Unite -no-start-insert giti/branch_all<CR>
