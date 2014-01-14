@@ -14,7 +14,6 @@ CPPFLAGS="$CPPFLAGS /usr/local/Cellar/libxml2/2.7.7/include"
 
 bindkey -e
 
-
 alias svn=colorsvn
 alias em=/Applications/Emacs.app/Contents/MacOS/Emacs
 alias vm=vim
@@ -26,13 +25,14 @@ export EDITOR=vim
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$HOME/dotfiles/bin:$PATH
 #export PATH=/usr/local/bin:$PATH
 #export RBENV_ROOT=/usr/local/var/rbenv
 
 source ~/.zsh/pbcopy_buffer.zsh
 source ~/.zsh/zaw/zaw.zsh
 source ~/.zsh/zaw_custom.zsh
+source ~/.zsh/ssh.zsh
 #source ~/.zsh/auto-fu_init.zsh
 #
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
