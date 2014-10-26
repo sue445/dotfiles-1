@@ -2,14 +2,17 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  set nocompatible
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
+
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/vimfiler'
 
@@ -36,9 +39,20 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'gregsexton/gitv.git'
 NeoBundle 'kmnk/vim-unite-giti'
 
+NeoBundle 'digitaltoad/vim-jade'
+
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'dgryski/vim-godef'
+
+
+call neobundle#end()
+
 
 " NeoBundle 'Shougo/neosnippet'
 " NeoBundle 'jpalardy/vim-slime'
+
+set rtp^=$GOROOT/misc/vim
+set rtp^=$GOPATH/src/github.com/nsf/gocode/vim
 
 filetype indent plugin on
 
@@ -97,6 +111,7 @@ source ~/dotfiles/dot.vimrc.search
 source ~/dotfiles/dot.vimrc.unite
 source ~/dotfiles/dot.vimrc.vimfiler
 source ~/dotfiles/dot.vimrc.git
+source ~/dotfiles/dot.vimrc.golang
 
 autocmd QuickFixCmdPost *grep* cwindow
 autocmd BufNewFile,BufRead *.cap set filetype=ruby
