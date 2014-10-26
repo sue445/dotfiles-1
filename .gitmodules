@@ -25,3 +25,6 @@
 [submodule "dot.vim/bundle/vimproc"]
  path = dot.vim/bundle/vimproc
  url = https://github.com/Shougo/vimproc
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = https://github.com/erikw/tmux-powerline
