@@ -4,9 +4,11 @@ alias ll='ls -la | peco'
 alias tp='top | peco'
 alias pt='ps aux  | peco'
 
-function ggvim() {
-  vim $(git grep -n --no-color $@ | grep def | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+function peco-git-grep-vim() {
+  vim $(git grep -n --no-color $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
 }
+
+alias ggvim="peco-git-grep-vim"
 
 # peco-ghq-src
 function peco-ghq-src () {
@@ -49,7 +51,7 @@ function peco-pkill() {
 alias pk="peco-pkill"
 
 
-function cdgem() {
+function peco-cd-gem() {
   local gem_name=$(bundle list | sed -e 's/^ *\* *//g' | peco | cut -d \  -f 1)
   if [ -n "$gem_name" ]; then
     local gem_dir=$(bundle show ${gem_name})
@@ -57,15 +59,26 @@ function cdgem() {
     cd ${gem_dir}
   fi
 }
+alias cdgem="peco-cd-gem"
 
-function s() {
-  ssh $(awk '
-    tolower($1)=="host" {
-      for (i=2; i<=NF; i++) {
-        if ($i !~ "[*?]") {
-          print $i
-        }
-      }
-    }
-  ' ~/.ssh/config | sort | peco)
+function peco-ssh() {
+  local result=$(grep ^Host ~/.ssh/config |awk '{print $2}' |peco)
+
+  if [ -n "$result" ]; then
+    \ssh ${result}
+  fi
 }
+alias s="peco-ssh"
+
+function peco-ag-vim () {
+  vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+}
+alias agvim="peco-ag-vim"
+
+function peco-git-ls-file-vim() {
+  local gvm_file=$(git ls-files | grep $@ |peco --query "$LBUFFER")
+  if [ -n "$gvm_file" ]; then
+    vim ${gvm_file}
+  fi
+}
+alias gvm="peco-git-ls-file-vim"
